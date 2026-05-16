@@ -113,9 +113,9 @@ async def handle_request(bot, message):
         if not await db.has_premium_access(user_id):
             if not await check_verification(bot, user_id) and DS_VERIFICATION == True:
                 btn = [[
-                    InlineKeyboardButton("𝗩𝗘𝗥𝗜𝗙𝗬 ✅", url=await get_token(bot, user_id, f"https://telegram.me/{DS_BOT_USERNAME}?start="))
+                    InlineKeyboardButton("𝗩𝗘𝗥𝗜𝗙𝗬 ✅", url=await get_token(bot, user_id, f"https://telegram.me/{DS_BOT_USERNAME}?start= - style:blue"))
                 ],[
-                    InlineKeyboardButton("𝗛𝗢𝗪 𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗬 🔓", url=DS_VERIFY_TUTORIAL)
+                    InlineKeyboardButton("𝗛𝗢𝗪 𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗬 🔓", url=DS_VERIFY_TUTORIAL - style:red)
                 ]]
                 k = await message.reply_text(
                         text=VERIFICATION_TEXT.format(message.from_user.mention),
@@ -154,7 +154,7 @@ async def handle_request(bot, message):
         if not await db.has_premium_access(user_id):
             if not await check_verification(bot, user_id) and DS_VERIFICATION == True:
                 btn = [[
-                    InlineKeyboardButton(" 𝗩𝗘𝗥𝗜𝗙𝗬 ✅", url=await get_token(bot, user_id, f"https://telegram.me/{DS_BOT_USERNAME}?start="))
+                    InlineKeyboardButton(" 𝗩𝗘𝗥𝗜𝗙𝗬 ✅", url=await get_token(bot, user_id, f"https://telegram.me/{DS_BOT_USERNAME}?start= - style:blue"))
                 ],[
                     InlineKeyboardButton("𝗛𝗢𝗪 𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗬 🔓", url=DS_VERIFY_TUTORIAL)
                 ]]
@@ -223,8 +223,8 @@ async def handle_request(bot, message):
     
     elif "get premium" in text: 
         buttons = [[
-            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift')
-        ]] [[ InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift')
+            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift - style:red')
+        ]] [[ InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift -style:blue')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(text=SUBS_TXT,
@@ -233,8 +233,8 @@ async def handle_request(bot, message):
 
     elif "bot & repo details" in text:
         buttons = [[
-            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='http://t.me/ishowdrift') ]] 
-        InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift')
+            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='http://t.me/ishowdrift - style:red') ]] 
+        InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift - style:blue')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         c = await message.reply_text(text=ABOUT_TXT,
