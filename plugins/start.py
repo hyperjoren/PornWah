@@ -223,7 +223,8 @@ async def handle_request(bot, message):
     
     elif "get premium" in text: 
         buttons = [[
-            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/exzmc')
+            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift')
+        ]] [[ InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(text=SUBS_TXT,
@@ -232,7 +233,8 @@ async def handle_request(bot, message):
 
     elif "bot & repo details" in text:
         buttons = [[
-            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='http://t.me/exzmc')
+            InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='http://t.me/ishowdrift') ]] 
+        InlineKeyboardButton('𝗕𝗨𝗬 𝗥𝗘𝗣𝗢 ✅', url='https://t.me/ishowdrift')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         c = await message.reply_text(text=ABOUT_TXT,
