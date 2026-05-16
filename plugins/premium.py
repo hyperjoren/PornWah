@@ -45,7 +45,7 @@ async def add_redeem_code(client, message):
         keyboard = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("𝗥𝗘𝗗𝗘𝗘𝗠 𝗛𝗘𝗥𝗘 ✅️", url=f"http://t.me/{DS_BOT_USERNAME}")],
-                [InlineKeyboardButton("𝗔𝗡𝗬 𝗤𝗨𝗔𝗥𝗬❔", url="https://t.me/exzmc")]
+                [InlineKeyboardButton("𝗔𝗡𝗬 𝗤𝗨𝗔𝗥𝗬❔", url="https://t.me/ishowdrift")]
             ]
         )
 
